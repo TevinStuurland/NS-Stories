@@ -25,3 +25,92 @@ header a{
     width: 3.250em;
     height: 1.250em;
 }
+
+section, article{
+    padding: 2%;
+}
+
+/*------------------------------------*\
+  #DROOM: EASY TO READ
+\*------------------------------------*/
+.verhaal h2{
+    font-size: 5em;
+}
+
+.verhaal p{
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 2em;
+    margin: 5%;
+}
+
+/*------------------------------------*\
+  #PARANOIA: UNITS FOR LAYOUT
+\*------------------------------------*/
+
+.verhaal-2 h2{
+    font-size: 5em;
+}
+
+.verhaal-2 p{
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 2em;
+    padding: 0.5em;
+
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
+    -moz-column-gap: 2em; /* Firefox */
+    column-gap: 2em;
+}
+
+.verhaal-2 a + p:first-letter{
+    font-size: 3em;
+}
+
+
+/*------------------------------------*\
+  #OVERZICHT: BOX MODEL
+\*------------------------------------*/
+/*Positioning*/
+.overzicht header{
+    position: fixed;
+}
+
+.overzicht main{
+    padding-top: 2em;
+}
+
+/*Inline-block*/
+.overzicht header{
+    position: fixed;
+}
+
+.overzicht main{
+    padding-top: 2em;
+}
+
+/*.overzicht main section article{
+    position: static;
+}
+
+.overzicht main section article:nth-child(odd){
+    position: absolute;
+    margin-left: 35em;
+    margin-top: -15em;
+}
+
+.overzicht main section article:nth-child(odd){
+    position: relative;
+    margin-left: 35em;
+    margin-top: -15em;
+}*/
+
+.overzicht main section article{
+    display: inline-block;
+    background-color: yellow;
+    margin: 2em;
+}
