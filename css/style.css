@@ -31,8 +31,13 @@ section, article{
 }
 
 /*------------------------------------*\
-  #DROOM: EASY TO READ
+  #DROOM: EASY TO READ ✓
 \*------------------------------------*/
+.verhaal{
+    margin: 0 auto;
+    width: 60em;
+}
+
 .verhaal h2{
     font-size: 5em;
 }
@@ -41,12 +46,15 @@ section, article{
     font-size: 1.5em;
     font-weight: 300;
     line-height: 2em;
-    margin: 5%;
 }
 
 /*------------------------------------*\
-  #PARANOIA: UNITS FOR LAYOUT
+  #PARANOIA: UNITS FOR LAYOUT ✓
 \*------------------------------------*/
+.verhaal-2{
+    margin: 0 auto;
+    width: 60em;
+}
 
 .verhaal-2 h2{
     font-size: 5em;
@@ -56,8 +64,11 @@ section, article{
     font-size: 1.5em;
     font-weight: 300;
     line-height: 2em;
-    padding: 0.5em;
+}
 
+.verhaal-2 p:nth-child(odd){
+    background-color: hsla(360,60%,50%, 0.5);
+    padding: 2em;
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
@@ -73,7 +84,7 @@ section, article{
 
 
 /*------------------------------------*\
-  #OVERZICHT: BOX MODEL
+  #OVERZICHT: BOX MODEL ✓
 \*------------------------------------*/
 /*Positioning*/
 .overzicht header{
@@ -85,10 +96,6 @@ section, article{
 }
 
 /*Inline-block*/
-.overzicht header{
-    position: fixed;
-}
-
 .overzicht main{
     padding-top: 2em;
 }
@@ -111,6 +118,35 @@ section, article{
 
 .overzicht main section article{
     display: inline-block;
-    background-color: yellow;
+    background-color: hsla(360,60%,50%, 0.5);
     margin: 2em;
+}
+
+/*------------------------------------*\
+  #HEADER: FLEXBOX ✓
+\*------------------------------------*/
+.overzicht header{
+    display: flex;
+    flex-direction: row;
+    /*flex-direction: row-reverse;*/
+    align-items: center;
+}
+
+/*------------------------------------*\
+  #ARTIKEL: FLEXBOX
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #SITE: MEDIA-QUERIES
+\*------------------------------------*/
+.overzicht main .artikelen{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 70em){
+    .overzicht main .artikelen{
+        flex-wrap: nowrap;
+        flex-grow: 2;
+    }
 }
