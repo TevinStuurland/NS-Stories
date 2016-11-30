@@ -133,11 +133,11 @@ section, article{
 }
 
 /*------------------------------------*\
-  #ARTIKEL: FLEXBOX
+  #ARTIKEL: FLEXBOX ✓
 \*------------------------------------*/
 
 /*------------------------------------*\
-  #SITE: MEDIA-QUERIES
+  #SITE: MEDIA-QUERIES ✓
 \*------------------------------------*/
 .overzicht main .artikelen article{
     background-color: hsla(360,60%,50%, 0.5);
