@@ -1,24 +1,28 @@
 *{
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
 body{
     margin:0;
     padding:0;
-    font-family: roboto, sans-serif;
     font-size: 1em;
+    background-color: #E6E6E9;
+    font-family: "Segoe UI", "Verdana", sans-serif;
 }
 
 header{
     width: 100%;
     height: 3em;
-    background-color: #888;
     padding: 1em;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
 }
 
-header a{
-    padding: 1em;
+header p{
+    margin-left: auto;
 }
 
 .ns-logo{
@@ -26,241 +30,403 @@ header a{
     height: 1.250em;
 }
 
-section, article{
+section{
     padding: 2%;
 }
 
 /*------------------------------------*\
-  #DROOM: EASY TO READ ✓
+  #OVERZICHTSPAGINA
 \*------------------------------------*/
-.verhaal{
-    margin: 0 auto;
-    width: 60em;
+.overzicht main .background{
+    height:24em;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-image: url("../img/bg.jpg");
 }
 
-.verhaal h2{
-    font-size: 5em;
+.overzicht main .background section{
+    height:24em;
+    text-align: center;
+    background-color: rgba(43, 119, 189, 0.7);
 }
 
-.verhaal p{
-    font-size: 1.5em;
+.overzicht main .background section select{
+    width: 20%;
+    height: 3em;
+    padding: 0.5em;
     font-weight: 300;
-    line-height: 2em;
+    font-size: 150%;
+    margin-top: 2.5em;
 }
 
-/*------------------------------------*\
-  #PARANOIA: UNITS FOR LAYOUT ✓
-\*------------------------------------*/
-.verhaal-2{
-    margin: 0 auto;
-    width: 60em;
-}
-
-.verhaal-2 h2{
-    font-size: 5em;
-}
-
-.verhaal-2 p{
-    font-size: 1.5em;
+.overzicht main .background section a{
+    color: #fff;
     font-weight: 300;
+    font-size: 1.5em;
+    margin-left: 1em;
+}
+
+.overzicht main .background section h1{
+    color: #fff;
+    font-weight: 300;
+    font-size: 3.125rem;
+}
+
+.overzicht main form{
+    display: flex;
+    align-items: baseline;
+    margin-top: 1.5em;
+    padding: 0 2em;
+}
+
+.overzicht main form select{
+    height: 2vh;
+    margin-left: 0.5em;
+}
+
+.overzicht main form input{
+    width: 20vw;
+    margin-left: 1em;
+}
+
+.overzicht main form label{
+    margin-left: auto;
+}
+
+.artikelen{
+    padding: 0;
+    display: flex;
+    margin-top: 1em;
+}
+
+.overzicht main h2{
+    display: block;
+    width: 15em;
+    height: 3.5em;
+    color: #003082;
+    font-weight: 400;
     line-height: 2em;
+    padding-left: 1em;
+    font-size: 1.875em;
+    margin-top: 0.5em;
+    margin-bottom: -2em;
+    background-color: #E5B522;
 }
 
-.verhaal-2 p:nth-child(odd){
-    background-color: hsla(360,60%,50%, 0.5);
-    padding: 2em;
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-
-    -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
-    -moz-column-gap: 2em; /* Firefox */
-    column-gap: 2em;
+.artikelen article{
+    width: 32vw;
+    height: 23rem;
+    margin-left: 1em;
+    margin-bottom: 2em;
+    background-size: 100%;
+    background-color: #fff;
+    background-repeat: no-repeat;
 }
 
-.verhaal-2 a + p:first-letter{
-    font-size: 3em;
+.artikelen article:nth-child(1){
+    background-color: #B170C1;
+    color: #fff;
+}
+.artikelen article:nth-child(1) a{
+    color: #540168;
 }
 
-
-/*------------------------------------*\
-  #OVERZICHT: BOX MODEL ✓
-\*------------------------------------*/
-/*Positioning
-.overzicht header{
-    position: fixed;
+.artikelen article:nth-child(2){
+    background-color: #5CE5E5;
+}
+.artikelen article:nth-child(2) a{
+    color: #079999;
 }
 
-.overzicht main{
-    padding-top: 2em;
-}*/
-
-/*Inline-block
-.overzicht main{
-    padding-top: 2em;
-}*/
-
-/*.overzicht main section article{
-    position: static;
+.artikelen article:nth-child(3){
+    background-color: #424242;
+    color: #fff;
+}
+.artikelen article:nth-child(3) a{
+    color: #000;
 }
 
-.overzicht main section article:nth-child(odd){
+.artikelen article h3{
+    margin: 1em;
+    font-size: 2em;
+}
+
+.artikelen article p{
+    margin: 2em;
+    font-size: 1.4em;
+    height: 40%;
+}
+
+.artikelen article a{
+    margin: 2em;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.artikelen article .genre img{
+    max-width: 100%;
+}
+
+.artikelen article .genre{
+    width: 4em;
+    padding: 1em;
+    margin-left: 27vw;
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    margin-left: 35em;
-    margin-top: -15em;
+    float: right;
+    z-index: 100;
 }
 
-.overzicht main section article:nth-child(odd){
-    position: relative;
-    margin-left: 35em;
-    margin-top: -15em;
-}*/
 
-/*.overzicht main section article{
-    display: inline-block;
-    background-color: hsla(360,60%,50%, 0.5);
-    margin: 2em;
-}*/
+.artikelen article span{
+    color: #fff;
+    float: right;
+    padding: 0.5em 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*article width when round 1200px = width: 23.188rem;*/
 
 /*------------------------------------*\
-  #HEADER: FLEXBOX ✓
+  #FORMS
 \*------------------------------------*/
-.overzicht header{
+.inlog form{
+    width: 40%;
+    background-color: #ffc917;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+.inlog .bedankt{
+    width: 25%;
+    background-color: #ffc917;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+.inlog{
     display: flex;
-    flex-direction: row;
-    /*flex-direction: row-reverse;*/
-    align-items: center;
+    width: 100%;
+    margin-top: 5em;
+}
+
+.inlog section{
+    width: 50vw;
+    font-size: 1.5em;
+    line-height: 3em;
+    font-weight: 300;
+}
+
+a{
+    font-weight: 600;
+    color: #2B77BD;
+    text-decoration: none;
+}
+
+legend{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+fieldset{
+    border: none;
+}
+
+input{
+    height: 3em;
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.btn{
+    height: 3em;
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 1em;
+    color: #fff;
+    background-color: #2B77BD;
+    font-size: 1em;
 }
 
 /*------------------------------------*\
-  #ARTIKEL: FLEXBOX ✓
+  #MEDIAQUERIES
 \*------------------------------------*/
+@media (min-width: 5em) and (max-width: 49em) {
 
-/*------------------------------------*\
-  #SITE: MEDIA-QUERIES ✓
-\*------------------------------------*/
-.overzicht main .artikelen article{
-    background-color: hsla(360,60%,50%, 0.5);
-    margin: 2em;
-}
+    /*------------------------------------*\
+        #S-OVERZICHT
+    \*------------------------------------*/
+    .overzicht main h2{
+        font-size: 1.5em;
+    }
 
-.overzicht main .artikelen{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-@media (min-width: 10em){
-    .overzicht main .artikelen{
+    .artikelen{
         flex-wrap: wrap;
-        align-content: stretch;
     }
 
-    .overzicht main .artikelen article{
-        width: 100%;
+    .artikelen article{
+        width: 90vw;
     }
 
-    /*verhaal 1*/
-    .verhaal{
-        margin: 0 auto;
-        width: 80%;
+    .overzicht main .background select, .overzicht main .background a{
+        display: none;
     }
 
-    .verhaal h2{
-        font-size: 3em;
+    .overzicht main .background, .overzicht main .background section{
+        height: 15vh;
     }
 
-    .verhaal p{
-        font-size: 1.3em;
-        font-weight: 300;
+    .overzicht main .background section h1{
+        font-size: 2em;
         line-height: 2em;
     }
 
-    /*Verhaal 2*/
-    .verhaal-2{
-        margin: 0 auto;
+    .overzicht main form{
+        margin: 1em;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .overzicht main form label{
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+
+    .artikelen article .genre{
+        margin-left: 70vw;
+    }
+
+    .artikelen article p{
+        margin: 1em;
+        font-size: 1.4em;
+    }
+
+    /*------------------------------------*\
+        #S-OVERZICHT
+    \*------------------------------------*/
+    .inlog{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .inlog form{
         width: 100%;
     }
 
-    .verhaal-2 h2{
-        font-size: 5em;
-    }
-
-    .verhaal-2 p{
+    .inlog section{
+        width: 100vw;
         font-size: 1.3em;
-        font-weight: 300;
         line-height: 2em;
     }
 
-    .verhaal-2 p:nth-child(odd){
-        background-color: hsla(360,60%,50%, 0.5);
-        padding: 1em;
-        -webkit-column-count: 1; /* Chrome, Safari, Opera */
-        -moz-column-count: 1; /* Firefox */
-        column-count: 1;
-
-        -webkit-column-gap: 0; /* Chrome, Safari, Opera */
-        -moz-column-gap: 0; /* Firefox */
-        column-gap: 0;
+    .inlog .bedankt{
+        margin:1em ;
+        width: 100%;
     }
-
-    .verhaal-2 a + p:first-letter{
-        font-size: 3em;
-    }
-
 
 }
 
-@media (min-width: 65em){
-    .overzicht main .artikelen{
-        flex-wrap: nowrap;
+@media (min-width: 50em) and (max-width: 70em)  {
+    /*------------------------------------*\
+        #M-OVERZICHT
+    \*------------------------------------*/
+    main{
+        display: flex;
+        padding-top: 5vh;
     }
 
-    /*Verhaal 1*/
-    .verhaal{
-        margin: 0 auto;
-        width: 60em;
+    header{
+        position: fixed;
     }
 
-    .verhaal h2{
-        font-size: 5em;
-    }
-
-    .verhaal p{
+    .overzicht main h2{
         font-size: 1.5em;
-        font-weight: 300;
+        width: 100vw;
+        height: 4em;
+        line-height: 4em;
+        padding-left: 45vw;
+    }
+
+    .artikelen{
+        display: block;
+    }
+
+    .artikelen article{
+        margin-left: -30em;
+        width: 54vw;
+        font-size: 0.9em;
+    }
+
+    .artikelen article:first-child{
+        margin-top: 15em;
+    }
+
+    .overzicht main .background select, .overzicht main .background a{
+        display: none;
+    }
+
+    .overzicht main .background{
+        background-size: 300%;
+        background-position: center top;
+    }
+
+    .overzicht main .background, .overzicht main .background section{
+        height: 95vh;
+        width: 40vw;
+        position: fixed;
+    }
+
+    .overzicht main .background section h1{
+        font-size: 2em;
         line-height: 2em;
     }
 
-    /*Verhaal 2*/
-    .verhaal-2{
-        margin: 0 auto;
-        width: 80%;
+    .overzicht main form{
+        padding: 0;
+        display: block;
+        position: absolute;
+        margin-left: 25em;
+        margin-top: 8em;
     }
 
-    .verhaal-2 h2{
-        font-size: 5em;
+    .overzicht main form input{
+        margin-top: 1em;
     }
 
-    .verhaal-2 p{
-        font-size: 1.5em;
-        font-weight: 300;
+    .artikelen article .genre{
+        margin-left: 44vw;
+    }
+
+    .artikelen article p{
+        margin: 1em;
+        padding: 1em;
+        font-size: 1.4em;
+    }
+
+    .artikelen article h3{
+        padding-top: 0.5em;
+    }
+
+    /*------------------------------------*\
+        #M-LOGIN
+    \*------------------------------------*/
+    .inlog{
+        margin: 0;
+    }
+
+    .inlog form{
+        width: 40%;
+    }
+
+    .inlog section{
+        width: 60vw;
+        font-size: 1.2em;
         line-height: 2em;
     }
 
-    .verhaal-2 p:nth-child(odd){
-        background-color: hsla(360,60%,50%, 0.5);
-        padding: 2em;
-        -webkit-column-count: 3; /* Chrome, Safari, Opera */
-        -moz-column-count: 3; /* Firefox */
-        column-count: 3;
-
-        -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
-        -moz-column-gap: 2em; /* Firefox */
-        column-gap: 2em;
+    .inlog .bedankt{
+        padding-top:5em ;
+        width: 50%;
     }
-
-    .verhaal-2 a + p:first-letter{
-        font-size: 3em;
-    }
-
 }

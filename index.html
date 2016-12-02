@@ -6,66 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/modal.js"></script>
 </head>
 <body class="overzicht">
     <header>
-           <img class="ns-logo" src="img/ns.svg" alt="NS Logo">
-
-           <a href="account/inlog.html">Mijn NS</a>
-           <a href="http://www.english.com">english</a>
+      <a href="#"><img class="ns-logo" src="img/ns.svg" alt="NS Logo"></a>
+      <p>Gelezen verhalen terug zien? <a href="account/inlog.html">Log in</a> of <a href="account/registreer.html">registreer</a></p>
     </header>
 
     <main>
+      <div class="background">
         <section>
-           <h1>Tijd voor lezen, tijd voor jezelf</h1>
-           <input type="search" name="search" placeholder="Hoe voel jij je?">
+          <h1>Tijd voor lezen, tijd voor jezelf</h1>
 
-           <button class="mystery">Mysterie</button>
-           <button class="unreliable">Onbetrouwbare Verteller</button>
-           <button class="religion">Religie</button>
+          <select>
+            <option selected disabled hidden>Hoeveel tijd heb je?</option>
+            <option value="&lt; 5">&lt; 5</option>
+            <option value="5-10">5-10</option>
+            <option value="10-15">10-15</option>
+            <option value="15-20">15-20</option>
+            <option value="20 &gt;">20 &gt;</option>
+          </select>
 
-           <a href="#">alle tags</a>
+          <select>
+            <option selected disabled hidden>Wat vind je leuk?</option>
+            <option value="fantasie">Fantasie</option>
+            <option value="horror">Horror</option>
+            <option value="sciencefiction">Science Fiction</option>
+            <option value="humor">Humor</option>
+            <option value="biografie;">Biografie</option>
+            <option value="youngadult">Young Adult</option>
+            <option value="roman">Romans</option>
+          </select>
+          <a href="#">zie meer tags</a>
         </section>
-        <nav>
-          <ul>
-            <li>Kort</li>
-            <li>Lang</li>
-            <li>Nieuwste</li>
-            <li>Oudste</li>
-            <li>Interessant voor nieuwe lezers</li>
-          </ul>
-        </nav>
+      </div>
 
-        <section class="artikelen">
-           <article>
-               <h2>Droom</h2> <button class="delete">X</button>
-               <p>Slierten zwerven rond mijn benen. Net zat ik nog in bus 21, het was....</p>
-               <button class="mystery">Mysterie</button>
-               <a href="verhalen/droom.html">Lees meer</a>
-           </article>
+      <form>
+        <select>
+            <option value="interessant" selected>Interessant voor nieuwe lezers</option>
+            <option value="recent">Recente verhalen</option>
+            <option value="oud">Oude verhalen</option>
+            <option value="alfabetisch">Alfabetisch</option>
+            <option value="veel">Veel woorden</option>
+            <option value="weinig">Weinig woorden</option>
+          </select>
 
-           <article>
-               <h2>Paranoia</h2> <button class="delete">X</button>
-               <p>Ik sluip uit de bus. Kop in de kraag. Ik maak mij klein...</p>
-               <button class="unreliable">Onbetrouwbare Verteller</button>
-               <a href="verhalen/paranoia.html">Lees meer</a>
-           </article>
+          <select>
+            <option selected disabled hidden>Hoeveel tijd heb je?</option>
+            <option value="&lt; 5">&lt; 5</option>
+            <option value="5-10">5-10</option>
+            <option value="10-15">10-15</option>
+            <option value="15-20">15-20</option>
+            <option value="20 &gt;">20 &gt;</option>
+          </select>
 
-           <article>
-               <h2>Jezus</h2> <button class="delete">X</button>
-               <p>1. de tocht naar de tempel der geschriften. 1. in den beginne was...</p>
-               <button class="religion">Religie</button>
-               <a href="#">Lees meer</a>
-           </article>
+          <select>
+            <option selected disabled hidden>Wat vind je leuk?</option>
+            <option value="fantasie">Fantasie</option>
+            <option value="horror">Horror</option>
+            <option value="sciencefiction">Science Fiction</option>
+            <option value="humor">Humor</option>
+            <option value="biografie;">Biografie</option>
+            <option value="youngadult">Young Adult</option>
+            <option value="roman">Romans</option>
+          </select>
 
-           <article>
-               <h2>Vrijdag de 13e</h2> <button class="delete">X</button>
-               <p>Bij het uitstappen van de bus, waait mijn jas open. Precies op het moment...</p>
-               <button class="mystery">Mysterie</button>
-               <a href="#">Lees meer</a>
-           </article>
-       </section>
+          <label for="zoeken">Zoeken</label>
+          <input type="search" id="zoeken" placeholder="zoeken...">
+      </form>
+      <h2>Interessant voor nieuwe lezers</h2>
 
+      <section class="artikelen">
+
+        <article>
+          <div class="genre droom"><img src="img/mysterie.png" alt="mysterie"></div>
+          <h3>Droom</h3>
+
+
+            <p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal...</p>
+
+            <a href="verhalen/droom.html">Pad &gt;</a>
+
+            <span>5 min</span>
+        </article>
+
+        <article>
+          <div class="genre paranoia"><img src="img/onbetrouwbaar.png" alt="onbetrouwbare verteller"></div>
+          <h3>Paranoia</h3>
+
+
+            <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De...</p>
+
+            <a href="verhalen/paranoia.html">Droom &gt;</a>
+
+            <span>15 min</span>
+        </article>
+
+        <article>
+          <div class="genre vrijdag"><img src="img/horror.png" alt="horror"></div>
+          <h3>Vrijdag de 13e</h3>
+
+            <p>Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit. erwijl ik de kinderwagen waarin mijn...</p>
+
+            <a href="#">Zoon &gt;</a>
+
+            <span>10 min</span>
+        </article>
+    </section>
     </main>
 </body>
 </html>

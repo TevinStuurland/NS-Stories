@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <title>Inlog / registreer pagina</title>
+    <title>Inlog pagina</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -9,28 +9,31 @@
 </head>
 <body>
     <header>
-           <h1>Read The Mood.</h1>
-           <img class="ns-logo" src="../img/ns.svg" alt="NS Logo">
-
-           <a href="#">Mijn NS</a>
-           <a href="http://www.english.com">english</a>
+      <a href="../index.html"><img class="ns-logo" src="../img/ns.svg" alt="NS Logo"></a>
     </header>
 
-    <main>
+    <main class="inlog">
       <form action="../index.html">
         <fieldset>
           <legend>Inloggen</legend>
           <label for="username">Gebruikersnaam</label>
-          <input type="text" id="username">
+          <input placeholder="voer uw gebruikersnaam in..." type="text" id="username">
 
           <label for="password">Wachtwoord</label>
-          <input type="password" id="password">
+          <input placeholder="voer uw wachtwoord in..." type="password" id="password">
 
-          <button class="login">Inloggen</button>
-
-          <a href="registreer.html">Wilt u registreren? Klik hier.</a>
+          <button class="btn">Inloggen</button>
         </fieldset>
+        <p>Wachtwoord vergeten?<a href="#"> Klik hier</a></p>
+        <p>Nog geen account? <a href="registreer.html">Klik hier.</a></p>
       </form>
+
+      <section>
+        <h2>Wat kan ik hiermee?</h2>
+        <p>Hiermee kan je verhalen makkelijk opslaan en opnieuw bekijken.</p>
+        <p>Daarnaast kan je ook jou favoriete genre's aangeven, waardoor het overzicht zich verandert naar jouw voorkeur!</p>
+        <p>Wilt u weer verder gaan met lezen? <a href="../index.html">Klik dan hier.</a></p>
+      </section>
     </main>
 </body>
 </html>
