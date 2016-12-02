@@ -121,11 +121,16 @@ section{
     background-size: 100%;
     background-color: #fff;
     background-repeat: no-repeat;
+    transition: ease-out 1s;
 }
 
 .artikelen article:nth-child(1){
     background-color: #B170C1;
     color: #fff;
+}
+.artikelen article:nth-child(1):hover{
+    background-color: #F1FB8F;
+    color:#000;
 }
 .artikelen article:nth-child(1) a{
     color: #540168;
@@ -134,6 +139,9 @@ section{
 .artikelen article:nth-child(2){
     background-color: #5CE5E5;
 }
+.artikelen article:nth-child(2):hover{
+    background-color: #FFAB66;
+}
 .artikelen article:nth-child(2) a{
     color: #079999;
 }
@@ -141,6 +149,9 @@ section{
 .artikelen article:nth-child(3){
     background-color: #424242;
     color: #fff;
+}
+.artikelen article:nth-child(3):hover{
+    background-color: #353535;
 }
 .artikelen article:nth-child(3) a{
     color: #000;
@@ -253,7 +264,6 @@ input{
   #MEDIAQUERIES
 \*------------------------------------*/
 @media (min-width: 5em) and (max-width: 49em) {
-
     /*------------------------------------*\
         #S-OVERZICHT
     \*------------------------------------*/
