@@ -52,23 +52,6 @@ section{
     transition: all 0.5s;
 }
 
-.overzicht main .background section:hover{
-    transition: all 0.5s;
-    background-color: rgba(229, 181, 34, 0.7)
-}
-
-.overzicht main .background section > h1:after{
-    opacity: 0;
-    content: " ";
-    transition: all 1s;
-}
-
-.overzicht main .background section:hover > h1:after{
-    content: " en lees mee met de rest";
-    opacity: 1;
-    transition: all 1s;
-}
-
 .overzicht main .background section select{
     width: 20%;
     height: 4rem;
