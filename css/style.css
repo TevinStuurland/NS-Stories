@@ -44,7 +44,6 @@ section{
     background-image: url("../img/bg.jpg");
 }
 
-
 .overzicht main .background section{
     height:24em;
     text-align: center;
@@ -116,43 +115,24 @@ section:nth-child(4){
 
 section:nth-child(4) article{
     width: 32vw;
-    height: 23rem;
+    height: 30rem;
     margin-left: 1em;
     margin-bottom: 2em;
     background-size: 100%;
     background-repeat: no-repeat;
     transition: ease-out 1s;
+    background-color: #fff;
 }
 
-section:nth-child(4) article:nth-child(1){
-    background-color: #B170C1;
-    color: #fff;
-}
-section:nth-child(4) article:nth-child(1):hover{
-    background-color: #F1FB8F;
-    color:#000;
-}
 section:nth-child(4) article:nth-child(1) a{
     color: #540168;
 }
 
-section:nth-child(4) article:nth-child(2){
-    background-color: #5CE5E5;
-}
-section:nth-child(4) article:nth-child(2):hover{
-    background-color: #FFAB66;
-}
+
 section:nth-child(4) article:nth-child(2) a{
     color: #079999;
 }
 
-section:nth-child(4) article:nth-child(3){
-    background-color: #424242;
-    color: #fff;
-}
-section:nth-child(4) article:nth-child(3):hover{
-    background-color: #353535;
-}
 section:nth-child(4) article:nth-child(3) a{
     color: #000;
 }
@@ -160,16 +140,19 @@ section:nth-child(4) article:nth-child(3) a{
 section:nth-child(4) article h3{
     margin: 1em;
     font-size: 2em;
+    z-index: 200;
+    position: relative;
+    color: #fff;
 }
 
 section:nth-child(4) article p{
-    margin: 2em 2em 0 2em;
+    margin: 7em 4em 0 4em;
     font-size: 1.4em;
-    height: 40%;
+    height: 30%;
 }
 
 section:nth-child(4) article a{
-    margin: 2em;
+    margin-left: 4em;
     font-size: 2em;
     font-weight: 400;
 }
@@ -197,8 +180,257 @@ section:nth-child(4) article span{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+section article{
+    background-position: 0 -10em;
+}
+
+section article:first-child{
+    background-image: url("../img/droom.jpg");
+}
+
+section article:nth-child(2){
+    background-image: url("../img/paranoia.jpg");
+    background-position: 0 -9em;
+}
+
+section article:nth-child(3){
+    background-image: url("../img/vrijdag.jpg");
+    background-position: 0 -11.5em;
+}
+
+section article > div:first-child{
+    position: absolute;
+    width: 32vw;
+    height: 23vh;
+}
+
+section article:first-child > div:first-child{
+    background-color: rgba(177, 112, 193, 0.6);
+}
+
+section article:nth-child(2) > div:first-child{
+    background-color: rgba(119, 205, 213, 0.6);
+}
+
+section article:nth-child(3) > div:first-child{
+    background-color: rgba(67, 66, 66, 0.6);
+}
+
 /*article width when round 1200px = width: 23.188rem;*/
 
+/*------------------------------------*\
+  #LIJST
+\*------------------------------------*/
+.lijst main h2{
+    display: block;
+    color: #003082;
+    font-weight: 400;
+    padding-left: 1em;
+    font-size: 1.875em;
+    padding: 1em;
+    width: 11.5em;
+    background-color: #E5B522;
+}
+
+.lijst main .background{
+    height:24em;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-image: url("../img/bg.jpg");
+}
+
+.lijst main .background section{
+    height:24em;
+    text-align: center;
+    background-color: rgba(43, 119, 189, 0.7);
+    transition: all 0.5s;
+}
+
+.lijst main .background section select{
+    width: 20%;
+    height: 4rem;
+    padding: 0.5em;
+    font-weight: 300;
+    font-size: 150%;
+    margin-top: 2.5em;
+}
+
+.lijst main .background section a{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-left: 1em;
+}
+
+.lijst main .background section h1{
+    color: #fff;
+    font-weight: 300;
+    font-size: 3.125rem;
+}
+
+.lijst section ul{
+    list-style: none;
+    width: 18vw;
+    text-align: center;
+}
+
+.lijst section ul input{
+    display: none;
+    margin-top: 1em;
+}
+
+.lijst section ul li{
+    padding: 1.5em;
+    cursor: pointer;
+    font-weight: 700;
+    color: #2b77bd;
+}
+
+.lijst section ul li:nth-child(3){
+    color: #000;
+    background-color: #fff;
+    border-bottom: #7b7c7d 3px solid;
+    transition: all 2s;
+}
+
+.lijst section button{
+    display: none;
+    margin-bottom: 1em;
+}
+
+.downloaded {
+    border-bottom: #E5B522 3px solid!important;
+}
+
+.lijst article{
+    background-color: lightgrey;
+    width: 25vw;
+    height: 25vh;
+    margin: -13em 0em 0em 25em;
+    padding: 1.5em;
+    transition: all 0.5s;
+}
+
+.lijst article h2{
+    margin-bottom: 1em;
+    font-size: 2em;
+    z-index: 200;
+    position: relative;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+}
+
+.lijst article button{
+    margin-top: 2.2vh;
+    margin-left: 0em;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+    display: inline-block;
+}
+
+.lijst button.ongedaan{
+    opacity: 0.6;
+    visibility: hidden;
+    margin-left: 6em;
+}
+
+.lijst .weggooien{
+    opacity: 0;
+    transform: translateY(-20em);
+}
+
+/* ============================================================
+  COMMON
+============================================================ */
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* ============================================================
+  SWITCH 1 - ROUND
+============================================================ */
+input.cmn-toggle-round + label {
+  padding: 2px;
+  width: 85px;
+  height: 35px;
+  background-color: #dddddd;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.cmn-toggle-round + label:before, input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 30px;
+  background-color: #ffc915;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: margin 0.4s;
+  -moz-transition: margin 0.4s;
+  -o-transition: margin 0.4s;
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #fedd6e;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 60px;
+}
+
+.switch{
+    margin-left: 25em;
+    float: left;
+}
+
+.switch p{
+    margin-top: -1.8em;
+    margin-left: 6em;
+    color: #cfa12b;
+    font-weight: 700;
+}
 /*------------------------------------*\
   #FORMS
 \*------------------------------------*/
@@ -262,17 +494,20 @@ input{
 }
 
 article > button{
-    margin-top: 5vh;
+    margin-top: 5em;
+    margin-left: -14em;
     border: none;
     background: none;
     cursor: pointer;
     font-weight: 600;
     padding: 0;
+    position: absolute;
 }
 
 article > button.ongedaan{
     opacity: 0.6;
     visibility: hidden;
+    margin-left: -8em;
 }
 
 /*------------------------------------*\
@@ -290,9 +525,6 @@ article > span.story{
     position: fixed;
     margin-top: 2vh;
     background-color: rgba(0, 0, 0, 0.5);
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s;
 }
 
 span.story ~ a{
@@ -301,25 +533,9 @@ span.story ~ a{
     padding: 1rem;
     font-size: 2em;
     position: fixed;
-    margin-left: 80vw;
+    margin-left: 90vw;
     margin-top: 2vh;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s;
 }
-
-.story.show{
-    transition: all 0.5s;
-    visibility: visible;
-    opacity: 1;
-}
-
-.story ~ a.show{
-    transition: all 0.5s;
-    visibility: visible;
-    opacity: 1;
-}
-
 
 .paranoia{
     margin: 0 auto;
@@ -475,8 +691,43 @@ span.story ~ a{
         font-size: 1.5rem;
     }
 
+    section article > div:first-child {
+        width: 91.5vw;
+        height: 15.4vh;
+    }
+
+    section:nth-child(4) article p {
+        margin: 3em;
+    }
+
+    section:nth-child(4) article a {
+        margin-left: 3em;
+    }
+
+    article > button {
+        margin-top: 6em;
+        margin-left: -11em;
+    }
+
+    section article {
+        background-position: 0 -17em;
+    }
+
+    section article:nth-child(2) {
+        background-position: 0 -16em;
+    }
+
+    section article:nth-child(3) {
+        background-position: 0 -18.9em;
+    }
+
+    section:nth-child(4) article p {
+        margin: 5em 1em 2em 1em;
+    }
+
+
     /*------------------------------------*\
-        #S-OVERZICHT
+        #S-INLOG
     \*------------------------------------*/
     .inlog{
         flex-wrap: wrap;
@@ -496,6 +747,31 @@ span.story ~ a{
     .inlog .bedankt{
         margin:1em ;
         width: 100%;
+    }
+
+    /*------------------------------------*\
+        #s-MICRO
+    \*------------------------------------*/
+    .lijst article {
+        margin: 0;
+        width: 100%;
+    }
+
+    .lijst main .background {
+        height: auto;
+    }
+
+    .lijst main .background section {
+        height: 27.5vh;
+    }
+
+    .lijst section ul {
+        width: 100%;
+    }
+
+    .switch{
+        margin: 1em 0 0 0;
+        float: none;
     }
 
 }
@@ -598,6 +874,30 @@ span.story ~ a{
         padding: 0.7rem;
     }
 
+    section article > div:first-child {
+        width: 54vw;
+    }
+
+    section article {
+        background-position: 0 -18em;
+    }
+
+    section article:nth-child(2) {
+        background-position: 0 -16.5em;
+    }
+
+    section article:nth-child(3) {
+        background-position: 0 -20.1em;
+    }
+
+    section:nth-child(4) article p {
+        margin: 8em 1em 0 1em;
+    }
+
+    article > button {
+        margin-left: -12em;
+    }
+
     /*------------------------------------*\
         #M-LOGIN
     \*------------------------------------*/
@@ -618,6 +918,26 @@ span.story ~ a{
     .inlog .bedankt{
         padding-top:5em ;
         width: 50%;
+    }
+
+    /*------------------------------------*\
+        #M-MICRO
+    \*------------------------------------*/
+    .lijst article {
+        margin: -13em 0em 0em 23em;
+        width: 30vw;
+        height: 28vh;
+    }
+
+    .lijst main .background section {
+        height: 95vh;
+        text-align: center;
+        background-color: rgba(43, 119, 189, 0.7);
+        transition: all 0.5s;
+    }
+
+    .lijst section ul {
+        width: 22em;
     }
 
     /*------------------------------------*\
